@@ -4,7 +4,6 @@
 	--form__button-hover: rgba(53, 198, 77, 0.562);
 	--load-more__button-hover: rgba(25, 38, 226, 0.842);
 	--main-dark: #212121;
-
 	--secondary-bg: rgba(247, 249, 255, 0.863);
 	--card-bg: rgb(247, 247, 247);
 	--cards-font: 'Karla', cursive;
@@ -67,9 +66,7 @@ a:hover .info{
 .info {
 	display: flex;
 	justify-content: space-evenly;
-
 	padding: 6px;
-
 	font-family: var(--cards-font);
 	color: var(--main-dark);
 }
@@ -84,7 +81,6 @@ a:hover .info{
 .search-form {
 	display: flex;
 	justify-content: center;
-
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 15px;
@@ -96,10 +92,8 @@ a:hover .info{
 	width: 400px;
 	height: 30px;
 	padding: 5px;
-
 	font-size: 24px;
 	font-family: var(--form-font);
-
 	border-radius: 10px;
 	border-color: transparent;
 }
@@ -120,14 +114,11 @@ a:hover .info{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	padding: 5px 15px;
 	width: 200px;
 	height: 45px;
-
 	font-size: 30px;
 	font-family: var(--form-font);
-
 	border-radius: 20px;
 	border-color: transparent;
 	background-color: var(--main-color);
@@ -144,14 +135,12 @@ a:hover .info{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	padding: 5px;
 	width: 45px;
 	height: 45px;
-
+	margin-right: 20px;
 	font-size: 30px;
 	font-family: var(--search__form-font);
-
 	border-radius: 25px;
 	border-color: transparent;
 	background-color: var(--main-color);
@@ -185,5 +174,3 @@ a:hover .info{
 .to-top-btn:hover .icon-arrow{
 	fill: var(--main-light);
 }
-
-
