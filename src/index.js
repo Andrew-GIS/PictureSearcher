@@ -72,8 +72,8 @@ async function onInputeSubmit (event) {
   gallery = new SimpleLightbox('.gallery .photo-card a');
   gallery.on('show.simplelightbox');
 
-  refs.searchBtn.setAttribute('disabled');
-  refs.btnLoadMore.removeAttribute('disabled');
+  refs.searchBtn.setAttribute('disabled', 'disabled');
+  refs.btnLoadMore.removeAttribute('disabled', 'disabled');
 
   page += 1;
 }

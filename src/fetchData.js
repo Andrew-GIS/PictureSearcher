@@ -5,7 +5,7 @@ const my_key = '27722310-5078c360e429b8b979ebf7ad7';
 const general_link = 'https://pixabay.com/api/';
 const per_page_default = 40;
 
-import { page, refs } from './index';
+import {page, refs } from './index';
 
 export const notiflixOptions = Notiflix.Notify.init({
   width: '400px',
@@ -41,6 +41,17 @@ const fetchPictures = async query => {
         notiflixOptions,
       );
     }
+    refs.btnLoadMore.classList.remove('is-hidden');
+    if (responseData.length < 40) {
+      // console.log('less than 40 :>> ');
+      refs.btnLoadMore.classList.add('is-hidden');
+      Notiflix.Notify.success(
+        `We're sorry, but you've reached the end of search results`,
+        notiflixOptions,
+      );
+    }
+    console.log('responseData length :>> ', responseData.length);
+    
     return responseData;
   } catch (error) {
     console.log(error);

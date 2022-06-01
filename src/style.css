@@ -174,3 +174,7 @@ a:hover .info{
 .to-top-btn:hover .icon-arrow{
 	fill: var(--main-light);
 }
+
+.is-hidden{
+	display: none;
+}
